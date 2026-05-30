@@ -1,0 +1,77 @@
+/* ==========================================================================
+   1. ESTILOS GLOBALES Y MENÚ DE NAVEGACIÓN (Para todas las páginas)
+   ========================================================================== */
+
+header nav {
+  background-color: #a6cbf5; /* Azul claro para la barra superior */
+  padding: 5px 0;
+}
+
+header nav > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; /* Alinea los enlaces a la izquierda */
+}
+
+header nav > ul li {
+  margin-right: 40px; 
+  padding-left: 15px;
+}
+
+header nav > ul li a {
+  text-decoration: none;
+  color: #0000ee; /* Azul clásico de hipervínculo */
+  font-family: sans-serif;
+  font-size: 0.95rem;
+}
+
+/* Encabezado General (Fondo gris claro) */
+header {
+  background-color: #d3d3d3;
+  padding: 10px;
+  font-family: 'Georgia', serif;
+}
+
+header h1 {
+  text-align: center;
+  color: #1a1a8c; /* Azul oscuro elegante */
+  font-style: italic;
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+/* ==========================================================================
+   2. GALERÍA FLEXBOX MULTIPÁGINA (Aplica a cualquier div con esta clase)
+   ========================================================================== */
+
+.gallery-container {
+  display: flex;              /* Activa Flexbox */
+  flex-wrap: wrap;            /* Permite el salto de línea automático */
+  background-color: #ffff33;  /* Fondo amarillo idéntico para ambas galerías */
+  padding: 15px;
+  row-gap: 15px;              /* Separación entre filas */
+  column-gap: 10px;           /* Separación entre columnas */
+  justify-content: flex-start;/* Alinea las imágenes a la izquierda */
+}
+
+/* Controla el tamaño de las imágenes de forma estricta en ambas páginas */
+.gallery-container img {
+  display: block;
+  width: 105px;               /* Mantiene el tamaño de la muestra de referencia */
+  height: auto;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   3. PIE DE PÁGINA GLOBAL
+   ========================================================================== */
+footer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e0e0e0;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
